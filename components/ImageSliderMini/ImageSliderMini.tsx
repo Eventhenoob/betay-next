@@ -1,4 +1,5 @@
 import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
 interface Props {
   images: string[];
   handleMouseEnter?: () => void;

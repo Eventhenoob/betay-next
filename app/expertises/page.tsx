@@ -61,19 +61,17 @@ const Expertises = () => {
               découvriront vos supports de communication.
             </p>
           </div>
-          <div className="lg:w-3/6 w-full">
+          <div className="lg:w-3/6  w-full">
             <ImageSliderMini
-              handleMouseEnter={handleMouseEnter}
-              handleMouseLeave={handleMouseLeave}
+              
               images={["e1.jpeg", "e2.jpeg", "e3.jpeg"]}
             />
           </div>
         </section>
         <section className="mt-4 mb-40 flex flex-wrap justify-center items-center">
-          <div className="lg:-order-1 order-1 lg:w-1/2 w-full">
+          <div className="lg:-order-1 z-50 relative order-1 lg:w-1/2 w-full">
             <ImageSliderMini
-              handleMouseEnter={handleMouseEnter}
-              handleMouseLeave={handleMouseLeave}
+             
               images={["e1.jpeg", "e2.jpeg", "e3.jpeg"]}
             />
           </div>

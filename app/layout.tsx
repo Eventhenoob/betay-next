@@ -18,7 +18,7 @@ export default function RootLayout({
       <head>
 			<link rel='icon' href='/logo.png' />
 		</head>
-      <body className={"dark overflow-x-hidden"}>
+      <body className={"dark bg-black overflow-x-hidden"}>
         <Navigation />
         {children}
         <Footer /> 

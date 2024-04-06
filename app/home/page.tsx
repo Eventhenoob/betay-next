@@ -51,7 +51,7 @@ export default function Home() {
           />
         )}
         {isTab ? (
-          <div className="absolute top-0 left-0 flex h-screen w-screen flex-col items-center justify-center p-5 pt-32  md:p-24">
+          <div className="absolute top-0 left-0 flex h-screen w-screen flex-col items-center justify-center p-5 ">
             <div className="content w-full lg:w-2/3  text-center">
               {isVideoLoaded && (
                 <AutoChangeableText

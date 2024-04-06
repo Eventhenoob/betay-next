@@ -14,11 +14,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark ">
+    <html lang="en" className="dark">
       <head>
 			<link rel='icon' href='/logo.png' />
 		</head>
-      <body className={"dark bg-black overflow-x-hidden"}>
+      <body className="dark bg-black overflow-x-hidden">
         <Navigation />
         {children}
         <Footer /> 

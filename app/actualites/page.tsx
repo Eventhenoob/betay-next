@@ -61,6 +61,7 @@ const News = () => {
           {newsData?.data.map((news) => {
             return (
               <NewsBox
+              key={news._id}
                 id={news._id}
                 date={DateParser(`${news.createdAt}`)}
                 heading={news.title}

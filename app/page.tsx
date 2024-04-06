@@ -34,7 +34,7 @@ const Initial = () => {
             (isEnded ? " opacity-100 " : " opacity-0 ")
           }
         >
-          La communication et le marketing pensé par des passionnées dont c'est
+          La communication et le marketing pensé par des passionnées dont c&apos;est
           le métier
         </p>
         <p

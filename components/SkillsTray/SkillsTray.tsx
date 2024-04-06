@@ -25,7 +25,7 @@ const SkillsTray = () => {
           </div>
           <p className="">
             Créer des sites Web visuellement attrayants et conviviaux qui
-            présentent l'histoire unique de votre marque et ses offres.
+            présentent l&apos;histoire unique de votre marque et ses offres.
           </p>
         </div>
       </div>
@@ -40,7 +40,7 @@ const SkillsTray = () => {
           <p className="">
             Donner vie à votre marque à travers un contenu visuel captivant, de
             la photographie à la vidéographie, en veillant à ce que chaque image
-            parle d'elle-même.
+            parle d&apos;elle-même.
           </p>
         </div>
       </div>
@@ -55,7 +55,7 @@ const SkillsTray = () => {
           <p className="">
             Analyser et évaluer vos stratégies de communication actuelles pour
             identifier les points forts, les points faibles et les axes
-            d'amélioration.
+            d&apos;amélioration.
           </p>
         </div>
       </div>

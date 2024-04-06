@@ -32,7 +32,7 @@ const HorizontalScrollCarousel = ({ onMouseEnter, onMouseLeave }: Props) => {
         </h2>
       </RevelAnimation>
       <p className="w-[80%] mb-10 text-xl md:text-3xl  m-auto">
-        L'agence de communication digitale{" "}
+        L&apos;agence de communication digitale{" "}
         <Link className="text-blue-400" href="/">
           Darwin
         </Link>{" "}
@@ -47,9 +47,9 @@ const HorizontalScrollCarousel = ({ onMouseEnter, onMouseLeave }: Props) => {
       </p>
 
       <p className="mb-10 w-[80%] text-xl md:text-3xl  m-auto">
-        Chez Darwin, nous sommes fiers d'avoir accompagné de nombreuses
-        entreprises locales dans l'amélioration de leur référencement SEO et
-        l'augmentation de leurs ventes. Notre équipe est composée de
+        Chez Darwin, nous sommes fiers d&apos;avoir accompagné de nombreuses
+        entreprises locales dans l&apos;amélioration de leur référencement SEO et
+        l&apos;augmentation de leurs ventes. Notre équipe est composée de
         professionnels chevronnés et passionnés, prêts à mettre leur
         savoir-faire au service de votre projet.
       </p>

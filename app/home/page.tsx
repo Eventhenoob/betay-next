@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <>
       {/* <CursorMask isHovered={isHovered} /> */}
-      <header className="flex h-max md:h-screen min-h-screen w-screen flex-col items-center relative justify-center p-5 pt-32  md:p-24">
+      <header className="flex  md:h-screen min-h-[90vh] w-screen flex-col items-center relative justify-center p-5 pt-32  md:p-24">
         {isTab ? (
           <VideoBG
             key={1}

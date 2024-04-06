@@ -1,0 +1,26 @@
+.bubble {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: absolute;
+  pointer-events: none;
+  background-color: rgba(7, 7, 7, 0.8);
+  transform: translate(-50%, -50%);
+  box-shadow: 0;
+  z-index: 1000;
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    transform: translate(-50%, 500%);
+    opacity: 0;
+    filter: hue-rotate(720deg);
+  }
+}

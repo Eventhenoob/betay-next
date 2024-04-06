@@ -1,0 +1,79 @@
+.button {
+  transform-origin: center;
+  transition: all 0.3s ease;
+  transform: rotate(0deg);
+  animation: rotateButtonBack 0.3s ease forwards;
+}
+
+.active .icon {
+  background-color: transparent;
+}
+
+.button:hover {
+  animation: rotateButton 0.3s ease forwards 0.3s;
+}
+
+.button:not(.active):hover .icon::after {
+  animation: transformToTop 0.4s ease;
+}
+
+.active .icon::before {
+  opacity: 1;
+  transform: translateY(0) rotate(45deg);
+}
+.active .icon::after {
+  opacity: 1;
+  transform: translateY(0) rotate(-45deg);
+}
+
+.icon::before,
+.icon,
+.icon::after {
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  transition: fill 0.3s;
+  transition: all 0.3s ease;
+}
+
+.icon::after {
+  transform: translateY(250%);
+  content: "";
+  display: block;
+}
+
+.icon::before {
+  transform: translateY(-350%);
+  content: "";
+  display: block;
+}
+
+@keyframes rotateButton {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes rotateButtonBack {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes transformToTop {
+  0% {
+    transform: translateY(250%);
+  }
+  50% {
+    transform: translateY(150%);
+  }
+  100% {
+    transform: translateY(250%);
+  }
+}

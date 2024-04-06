@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: 200px;
+  grid-auto-flow: dense;
+}
+
+.imgBox:first-child {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.imgBox:nth-child(2n + 3) {
+  grid-row: span 2;
+}
+.imgBox:nth-child(2n + 7) {
+  grid-row: span 2;
+  grid-column: span 1;
+}

@@ -1,0 +1,26 @@
+.container {
+  height: 90vh;
+  width: 90vw;
+  aspect-ratio: 1.5 / 1;
+  margin: auto;
+  display: flex;
+  overflow: hidden;
+}
+
+.container:has(.img.active) .img:not(.active) {
+  filter: grayscale(100%);
+}
+
+.img {
+  height: 100%;
+  width: calc(100% / 3);
+  object-fit: cover;
+  overflow: hidden;
+  border: 2px solid #141414;
+  transition: all 0.4s cubic-bezier(0.32, 0, 0.67, 0);
+  cursor: pointer;
+}
+
+.active {
+  width: 200%;
+}

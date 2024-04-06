@@ -13,9 +13,9 @@ export async function POST(req: Request) {
         });
     }
     await sandMail(name, email, message);
-    NextResponse.json({ message: "Mail sent successfully" }, {status: 200 });
+    return NextResponse.json({ message: "Mail sent successfully" }, {status: 200 });
   } catch (err) {
     console.log(err);
-    NextResponse.json({ message: "Something went wrong" }, {status: 500});
+    return NextResponse.json({ message: "Something went wrong" }, {status: 500});
   }
  }

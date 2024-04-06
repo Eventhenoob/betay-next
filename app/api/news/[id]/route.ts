@@ -8,11 +8,11 @@ export async function GET(req: NextRequest, {params: {id}} : {params: {id: strin
     try {
         await connect();
         const news = await News.findById(id);
-        NextResponse.json({
+        return NextResponse.json({
           data: news,
         }, {status: 200});
       } catch (err) {
         console.log(err);
-        NextResponse.json({ message: "Something went wrong" }, {status: 500});
+        return NextResponse.json({ message: "Something went wrong" }, {status: 500});
       }
 }

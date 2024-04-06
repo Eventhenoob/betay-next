@@ -32,7 +32,7 @@ export async function POST(req: Request) {
           const bytes = await file.arrayBuffer();
           const buffer = Buffer.from(bytes);
           const fileName = Date.now() + file.name;
-          const path = `/public/Images/${fileName}`
+          const path = `./public/Images/${fileName}`
           await writeFile(path, buffer);
           await connect();
           const newsData = {
@@ -44,7 +44,7 @@ export async function POST(req: Request) {
           };
           const news = new News(newsData);
           await news.save();
-          NextResponse.json({ message: "News created successfully" }, {status: 201});
+          return NextResponse.json({ message: "News created successfully" }, {status: 201});
     } catch (e) {
       console.log(e)
         return NextResponse.json(

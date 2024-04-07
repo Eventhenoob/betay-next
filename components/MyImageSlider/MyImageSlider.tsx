@@ -31,7 +31,7 @@ const MyImageSlider = () => {
     <div
       className={
         style["container"] +
-        " object-cover w-[90vw] h[90vh] md:w-[70vw] md:h-[90vh] "
+        " object-cover !w-[90vw] !h[90vh] !md:w-[70vw] !md:h-[90vh] "
       }
     >
       <div ref={slideRef} className={style["slide"]}>

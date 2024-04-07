@@ -12,7 +12,7 @@ const SingleNews = ({params: {id}} : {params: {id: string}}) => {
       </main>
     );
   if (err) {
-    <main className="min-w-[100vw] min-h-[100vh] flex-col flex justify-center items-center">
+    return (<main className="min-w-[100vw] min-h-[100vh] flex-col flex justify-center items-center">
       <p className="text-white text-3xl">Someting went wrong</p>
       <p className="text-white text-xl">{err}</p>
       <button
@@ -21,7 +21,7 @@ const SingleNews = ({params: {id}} : {params: {id: string}}) => {
       >
         Retry
       </button>
-    </main>;
+    </main>);
   } else {
     return (
       <main className="min-w-[100vw] flex-col bg-slate-200 text-black p-10 min-h-[100vh] flex justify-center items-center">

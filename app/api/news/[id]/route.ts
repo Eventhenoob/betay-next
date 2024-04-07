@@ -84,3 +84,30 @@ export async function PATCH(req: NextRequest, {params: {id}} : {params: {id: str
       return NextResponse.json({ message: "Something went wrong" }, {status: 500});
     }
 }
+
+export async function DELETE(req: NextRequest, {params: {id}} : {params: {id: string}}) {
+  try {  
+       await connect();
+      const news = await News.findById(id);
+      if(!news) return NextResponse.json({
+        message: "News not found"
+      }, {status: 404});
+
+      const key = req.nextUrl.searchParams.get("key");
+
+      if(key != process.env.key) return NextResponse
+      .json({ message: "Invalid Key" }, { status: 404 });
+
+      try {
+        await unlink(`./public/${news.image}`);
+      }
+      catch (e:any) {
+      }
+
+      await News.deleteOne({_id: id});
+      return NextResponse.json({ message: "deleted the news" }, {status: 202});  
+  }
+  catch (err) {
+    return NextResponse.json({ message: "Something went wrong" }, {status: 500});
+  }
+}

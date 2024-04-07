@@ -3,6 +3,7 @@ import HtmlFromText from "@/components/HtmlFromText/HtmlFromText";
 import useSingleNews from "@/hooks/useSingleNews";
 
 const SingleNews = ({params: {id}} : {params: {id: string}}) => {
+    const { err, getNews, newsData } = useSingleNews(id);
 
   if (id == null)
     return (
@@ -10,7 +11,6 @@ const SingleNews = ({params: {id}} : {params: {id: string}}) => {
         <p className="text-white text-2xl">404 News Not Found.</p>
       </main>
     );
-  const { err, getNews, newsData } = useSingleNews(id);
   if (err) {
     <main className="min-w-[100vw] min-h-[100vh] flex-col flex justify-center items-center">
       <p className="text-white text-3xl">Someting went wrong</p>

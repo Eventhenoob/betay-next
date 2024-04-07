@@ -14,9 +14,12 @@ const Initial = () => {
   }, []);
   return (
     <Link
-      href={isEnded ? "/home" : "/"}
+      href={isEnded ? "/home" : ""}
       className="flex flex-col justify-center items-center bg-white w-screen h-screen"
     >
+          <div
+      className={
+        "absolute z-10 top-0 left-0 overflow-hidden w-full h-full " }>
       <video
         onEnded={() => {
           setIsEnded(true);
@@ -25,13 +28,15 @@ const Initial = () => {
         autoPlay={true}
         preload="auto"
         muted={true}
-        loop={true}
+        loop={false}
         controls={false}
-        className="object-contain md:object-cover w-full h-full"
+        className="object-contain absolute md:object-cover w-full h-full"
       >
          <source src={`/initial.mp4`} type="video/mp4" />
       </video>
-      <div className="top-[62%] flex  justify-center items-center flex-col sm:top-[54%] md:top-2/3 text-2xl md:text-4xl absolute">
+
+        </div>
+      <div className="top-[62%] flex z-20  justify-center items-center flex-col sm:top-[54%] md:top-2/3 text-2xl md:text-4xl absolute">
         <p
           className={
             " transition-all duration-500 text-black p-4 text-center font-heading " +

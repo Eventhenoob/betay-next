@@ -11,7 +11,7 @@ const Agence = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setCube(true);
-    }, 100);
+    }, 500);
     return () => clearTimeout(timer);
   }, []);
   return (

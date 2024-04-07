@@ -25,7 +25,7 @@ const VideoBG = ({ video, onLoadedData, isDarkBg }: Props) => {
         loop={true}
         controls={false}
         className={
-          "object-cover w-full h-full " + (isDarkBg ? " opacity-30" : "")
+          "object-cover absolute top-0 left-0 w-full h-full " + (isDarkBg ? " opacity-30" : "")
         }
       >
         <source src={`/${video}`} type="video/mp4" />

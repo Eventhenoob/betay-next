@@ -24,6 +24,7 @@ const VideoBG = ({ video, onLoadedData, isDarkBg }: Props) => {
         preload="auto"
         muted={true}
         loop={true}
+        controls={false}
         className={
           "object-cover w-full h-full " + (isDarkBg ? " opacity-30" : "")
         }

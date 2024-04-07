@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 
 const Initial = () => {
   const [isEnded, setIsEnded] = useState(false);
-  const navigate = useRouter ();
+  const navigate = useRouter();
   useEffect(() => {
     const timer = setTimeout(() => {
       navigate.push("/home");
@@ -21,12 +21,16 @@ const Initial = () => {
         onEnded={() => {
           setIsEnded(true);
         }}
-        src="/initial.mp4"
-        className="object-contain md:object-cover w-full h-full"
+        playsInline={true}
+        autoPlay={true}
+        preload="auto"
+        muted={true}
+        loop={true}
         controls={false}
-        autoPlay
-        muted
-      />
+        className="object-contain md:object-cover w-full h-full"
+      >
+         <source src={`/initial.mp4`} type="video/mp4" />
+      </video>
       <div className="top-[62%] flex  justify-center items-center flex-col sm:top-[54%] md:top-2/3 text-2xl md:text-4xl absolute">
         <p
           className={

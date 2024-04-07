@@ -28,7 +28,7 @@ const HorizontalScrollCarousel = ({ onMouseEnter, onMouseLeave }: Props) => {
           onMouseLeave={onMouseLeave}
           className="text-4xl lg:text-7xl mb-14 text-white font-heading font-bold text-center w-[80%] m-auto"
         >
-          Identité de marque et Marketing visuel In branding we trust!
+          Identité de marque et Marketing
         </h2>
       </RevelAnimation>
       <p className="w-[80%] mb-10 text-xl md:text-3xl  m-auto">

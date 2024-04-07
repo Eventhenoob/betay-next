@@ -17,10 +17,9 @@ const VideoBG = ({ video, onLoadedData, isDarkBg }: Props) => {
         onPlay={() => {
           onLoadedData();
         }}
-        playsInline 
-        webkit-playsinline
+        playsInline={true} 
         onError={(_e) => {}}
-        autoPlay
+        autoPlay={true}
         preload="auto"
         muted={true}
         loop={true}

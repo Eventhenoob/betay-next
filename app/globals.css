@@ -80,3 +80,11 @@ body {
     opacity: 0.4;
   }
 }
+
+.removeScroll::-webkit-scrollbar {
+  display: none;
+}
+.removeScroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

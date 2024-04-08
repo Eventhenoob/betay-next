@@ -36,7 +36,7 @@ const Initial = () => {
       </video>
 
         </div>
-      <div className="top-[62%] flex z-20  justify-center items-center flex-col sm:top-[54%] md:top-2/3 text-2xl md:text-4xl absolute">
+      <div className="top-[54%] flex z-20  justify-center items-center flex-col sm:top-[54%] md:top-2/3 text-2xl md:text-4xl absolute">
         <p
           className={
             " transition-all duration-500 text-black p-4 text-center font-heading " +
@@ -48,7 +48,7 @@ const Initial = () => {
         </p>
         <p
           className={
-            " rounded-lg text-base transition-all mt-20 inline-block duration-[1.5s] ease-in bg-opacity-30 bg-black text-white p-4 text-center font-main " +
+            " rounded-lg text-base transition-all mt-10 inline-block duration-[1.5s] ease-in bg-opacity-30 bg-black text-white p-4 text-center font-main " +
             (isEnded ? " opacity-100 " : " opacity-0 ")
           }
         >

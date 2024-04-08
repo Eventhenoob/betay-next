@@ -8,6 +8,7 @@ import MyImageSlider from "@/components/MyImageSlider/MyImageSlider";
 import PremiumButton from "@/components/Buttons/PermiumButton";
 import useTab from "@/utils/useTab";
 import { PiCaretDoubleDownLight } from "react-icons/pi";
+import CustomImageShowcase from "@/components/CustomImageShowcase/CustomImageShowcase";
 
 export default function Home() {
   // const [isHovered, setIsHovered] = useState(false);
@@ -93,9 +94,9 @@ export default function Home() {
             onMouseLeave={disableHover}
           />
         </section>
-        <section className="w-full overflow-hidden relative min-h-screen">
-          <div className="h-screen">
-            <MyImageSlider />
+        <section className="w-full overflow-hidden relative min-h-screen flex flex-col justify-center items-center">
+          <div className="w-full md:w-7/12 md:mb-0 mb-10 flex justify-center items-center">
+            <CustomImageShowcase />
           </div>
           <div className="flex items-center mt-20 mb-10 justify-center">
             <PremiumButton href="/clients" text="Cas clients" />

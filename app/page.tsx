@@ -15,7 +15,7 @@ const Initial = () => {
   return (
     <Link
       href={isEnded ? "/home" : ""}
-      className="flex flex-col justify-center items-center bg-white w-screen h-screen"
+      className="flex fixed top-0 left-0 z-[9999] flex-col justify-center items-center bg-white w-screen h-screen"
     >
           <div
       className={

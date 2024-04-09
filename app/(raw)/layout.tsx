@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import Footer from "@/components/Footer";
-import Navigation from "@/components/Navigation";
+import "../globals.css";
 
 export const metadata: Metadata = {
   title: "Darwin",
@@ -18,10 +16,8 @@ export default function RootLayout({
       <head>
 			<link rel='icon' href='/logo.png' />
 		</head>
-      <body className="dark bg-black overflow-x-hidden">
-        <Navigation />
+      <body className="dark bg-white overflow-x-hidden">
         {children}
-        <Footer /> 
      </body>
     </html>
   );

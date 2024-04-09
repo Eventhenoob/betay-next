@@ -15,7 +15,7 @@ const Initial = () => {
   return (
     <Link
       href={isEnded ? "/home" : ""}
-      className="flex fixed top-0 left-0 z-[9999] flex-col justify-center items-center bg-white w-screen h-screen"
+      className="flex justify-center bg-white items-center flex-col w-screen min-h-screen h-fit relative"
     >
           <div
       className={
@@ -48,7 +48,7 @@ const Initial = () => {
         </p>
         <p
           className={
-            " rounded-lg text-base transition-all mt-10 inline-block duration-[1.5s] ease-in bg-opacity-30 bg-black text-white p-4 text-center font-main " +
+            " rounded-lg text-base transition-all mb-4 mt-10 inline-block duration-[1.5s] ease-in bg-opacity-30 bg-black text-white p-4 text-center font-main " +
             (isEnded ? " opacity-100 " : " opacity-0 ")
           }
         >
@@ -56,6 +56,7 @@ const Initial = () => {
         </p>
       </div>
     </Link>
+
   );
 };
 

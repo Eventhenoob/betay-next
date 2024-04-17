@@ -63,7 +63,7 @@ const Expertises = () => {
           </div>
           <div className="lg:w-3/6  w-full">
             <ImageSliderMini
-              
+
               images={["e1.jpeg", "e2.jpeg", "e3.jpeg"]}
             />
           </div>
@@ -71,7 +71,7 @@ const Expertises = () => {
         <section className="mt-4 mb-40 flex flex-wrap justify-center items-center">
           <div className="lg:-order-1 z-50 relative order-1 lg:w-1/2 w-full">
             <ImageSliderMini
-             
+
               images={["e1.jpeg", "e2.jpeg", "e3.jpeg"]}
             />
           </div>

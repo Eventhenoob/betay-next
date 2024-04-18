@@ -5,6 +5,8 @@ import ImageSlider from "@/components/ImageSlider";
 import CrewTray from "@/components/CrewTray";
 import ClientsShowcase from "@/components/ClientsShowcase";
 import { useEffect, useState } from "react";
+import SoloCard3D from "@/components/SoloCard3D";
+import CrewCard from "@/components/CrewCard";
 
 const Agence = () => {
   const [cube, setCube] = useState(false);
@@ -46,29 +48,20 @@ const Agence = () => {
         </div>
       </header>
       <main className="overflow-hidden min-h-screen w-full ">
-        <section className="pt-80 relative">
-          <div className="relative z-50">
-            <h2 className="md:text-6xl font-heading relative z-10 font-extralight text-4xl px-4 md:p-0 md:w-[60%] m-auto text-center text-bold text-[#EF7238] mb-40 md:mb-60">
-              Excellence Collaborative <br/> <span className="block mt-3">Élever la Communication</span> 
-            </h2>
-            <div className="flex justify-evenly  gap-32 md:gap-96 lg:gap-0 flex-wrap">
-              <GoalCard
-                heading="Notre Engageant Manifeste"
-                animation={"/rocket.png"}
-                description="Chez Agence Darwin, nous croyons en la collaboration transparente, l'adaptabilité et la recherche constante de l'excellence. Notre approche personnalisée garantit que chaque client bénéficie d'une solution sur mesure pour évoluer avec succès dans le monde numérique en constante évolution"
-              />
-
-              <GoalCard
-                heading="Collaboration Distinguée pour une Évolution Réussie"
-                animation={"/target.png"}
-                description="Votre réussite est notre priorité. Nous travaillons main dans la main avec nos clients, comprenant leurs besoins uniques pour créer des solutions qui vont au-delà des attentes et stimulent une véritable évolution dans leur communication"
-              />
-            </div>
+        <section className=" py-40 w-full">
+          <h2 className="md:text-6xl font-heading relative z-10 font-bold text-4xl px-4 md:p-0 md:w-[60%] m-auto text-center  text-[#EF7238] mb-40">
+            Excellence Collaborative <br /> <span className="block mt-3">Élever la Communication</span>
+          </h2>
+          <div className="flex justify-center flex-wrap gap-10">
+            <SoloCard3D image="tempimg2.png" description="" title={"Notre Engageant Manifeste"} />
+            <SoloCard3D image="tempimg1.png" description="" title={"Collaboration Distinguée pour une Évolution Réussie"} />
+            <SoloCard3D image="tempimg3.png" description="" title={"This is the heading"} />
           </div>
         </section>
+
         <section className="py-20">
           <div className="p-4  md:p-20">
-            <h2 className="text-6xl z-10 text-center font-heading mb-6 relative text-[#EF7238]">
+            <h2 className="text-6xl z-10 text-center font-bold font-heading mb-6 relative text-[#EF7238]">
               L&apos;agence
             </h2>
             <p className="relative text-xl">
@@ -86,15 +79,23 @@ const Agence = () => {
         </section>
 
         <section className="py-40">
-          <h2 className="text-4xl px-4 relative md:text-6xl md:w-[80%] m-auto mb-20 capitalize font-extralight text-center text-[#EF7238]">
+          <h2 className="text-4xl px-4 relative md:text-6xl md:w-[80%] m-auto mb-20 capitalize font-bold text-center text-[#EF7238]">
             Rencontrez nos experts passionnés pour une communication digitale
             complète.
           </h2>
-          <CrewTray />
+          <div className="flex gap-10 flex-wrap justify-center items-center">
+            <CrewCard about="One of the best programers in the world abdjhab ajhdb aan jahdiahdj abdibajnd jhvauvdaj d gadvabvdiad aiodoadh iadbh" image="Dov.jpeg" name="Dov A" post="Chef de projet" linkedin="ahjf" twitter="adknad" />
+            <CrewCard about="One of the best programers in the world abdjhab ajhdb aan jahdiahdj abdibajnd jhvauvdaj d gadvabvdiad aiodoadh iadbh" image="Soji.png" name="Sojivanan M" post="Expert digital" insta="asdnad" linkedin="ahjf" twitter="" />
+            <CrewCard about="One of the best programers in the world abdjhab ajhdb aan jahdiahdj abdibajnd jhvauvdaj d gadvabvdiad aiodoadh iadbh" image="Taye.png" name="Tayebi M." post="Responsable éditorial" linkedin="ahjf" twitter="" />
+            <CrewCard about="One of the best programers in the world abdjhab ajhdb aan jahdiahdj abdibajnd jhvauvdaj d gadvabvdiad aiodoadh iadbh" image="Manu .png" name="Emmanuel V." post="Développeur web" linkedin="ahjf" twitter="asdasdad" />
+            <CrewCard about="One of the best programers in the world abdjhab ajhdb aan jahdiahdj abdibajnd jhvauvdaj d gadvabvdiad aiodoadh iadbh" image="Sedi.png" name="Sedi Y" post="Community manager" linkedin="ahjf" twitter="" />
+            <CrewCard about="One of the best programers in the world abdjhab ajhdb aan jahdiahdj abdibajnd jhvauvdaj d gadvabvdiad aiodoadh iadbh" image="Alain.png" name="Alain-Samson D." post="Motion designer" linkedin="ahjf" twitter="" />
+
+          </div>
         </section>
 
         <section className="py-5 pb-40">
-          <h2 className="text-6xl relative mb-20 font-extralight  capitalize text-center text-[#EF7238]">
+          <h2 className="text-6xl relative mb-20 font-bold  capitalize text-center text-[#EF7238]">
             Nos Clients
           </h2>
           <ClientsShowcase />

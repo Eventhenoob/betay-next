@@ -2,13 +2,14 @@
 import AutoChangeableText from "@/components/AutoChangeableTex";
 import HorizontalScrollCarousel from "@/components/HorizontalScrollCarousel";
 import VideoBG from "@//components/VideoBG";
-// import CursorMask from "../components/CursorMark/CursorMask";
 import { useRef, useState } from "react";
 import MyImageSlider from "@/components/MyImageSlider/MyImageSlider";
 import PremiumButton from "@/components/Buttons/PermiumButton";
 import useTab from "@/utils/useTab";
 import { PiCaretDoubleDownLight } from "react-icons/pi";
 import CustomImageShowcase from "@/components/CustomImageShowcase/CustomImageShowcase";
+import SwiperSlider3D from "@/components/3dSwiperSlider";
+import SoloCard3D from "@/components/SoloCard3D";
 
 export default function Home() {
   // const [isHovered, setIsHovered] = useState(false);
@@ -17,7 +18,7 @@ export default function Home() {
   const isTab = useTab();
 
   const scrollToMain = () => {
-    if(mainRef.current) mainRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (mainRef.current) mainRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   const enableHover = () => {
@@ -83,11 +84,15 @@ export default function Home() {
           </div>
         )}
 
-<button onClick={() => scrollToMain()} className=" text-5xl absolute bottom-0 text-black opacity-75"><PiCaretDoubleDownLight className="animate-bounce cursor-pointer" />
-</button>
+        <button onClick={() => scrollToMain()} className=" text-5xl absolute bottom-0 text-black opacity-75"><PiCaretDoubleDownLight className="animate-bounce cursor-pointer" />
+        </button>
       </header>
 
       <main ref={mainRef} className="min-h-screen w-full py-10">
+        <section className=" py-14 w-full">
+          <SwiperSlider3D />
+        </section>
+        
         <section className=" py-14 w-full">
           <HorizontalScrollCarousel
             onMouseEnter={enableHover}

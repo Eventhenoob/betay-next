@@ -66,7 +66,7 @@ const config: Config = {
       },
       fontFamily: {
         main: ["Poppins", "sans-serif"],
-        heading: ["kalam", "cursive"],
+        heading: ["Work Sans", "cursive"],
       },
     },
   },

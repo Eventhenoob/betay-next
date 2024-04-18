@@ -1,25 +1,17 @@
 "use client"
 import ImageSliderMini from "@/components/ImageSliderMini/ImageSliderMini";
-// import CursorMask from "../components/CursorMark/CursorMask";
-// import { useState } from "react";
+
 import SkillsTray from "@/components/SkillsTray";
 import WorkTray from "@/components/WorkTray";
 const Expertises = () => {
-  // const [isHovered, setIsHovered] = useState(false);
-  const handleMouseEnter = () => {
-    // setIsHovered(true);
-  };
-  const handleMouseLeave = () => {
-    // setIsHovered(false);
-  };
+
+
   return (
     <>
       {/* <CursorMask isHovered={isHovered} /> */}
 
       <main className="w-full text-center lg:text-left lg:px-40 pt-48 flex flex-col  min-h-screen overflow-x-hidden">
         <h1
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
           className="text-5xl lg:text-7xl  font-heading  "
         >
           <span className="inline-block border-b-2 border-b-[#EF7238] ">
@@ -31,8 +23,6 @@ const Expertises = () => {
         <section className="mt-10  mb-40 flex  flex-wrap justify-between items-center">
           <div className="text-xl p-4 lg:pr-16 flex gap-4 flex-col lg:w-3/6">
             <h3
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
               className="text-4xl font-heading text-[#EF7238]"
             >
               Stratégie de communication
@@ -77,8 +67,7 @@ const Expertises = () => {
           </div>
           <div className=" text-xl p-4 lg:pl-16 flex gap-4 flex-col lg:w-1/2">
             <h3
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
+
               className="text-4xl font-heading text-[#EF7238]"
             >
               Création graphique

@@ -1,8 +1,8 @@
 const WorkTray = () => {
   return (
     <div className="flex flex-wrap gap-10 justify-center items-baseline ">
-      <a
-        href="/"
+      <div
+
         className="min-h-96 hover:scale-110 transition-all duration-300 w-80 rounded-lg overflow-hidden shrink-0 bg-slate-950"
       >
         <div className="h-1/2 w-full">
@@ -24,9 +24,8 @@ const WorkTray = () => {
             </p>
           </div>
         </div>
-      </a>
-      <a
-        href="/"
+      </div>
+      <div
         className="min-h-96 hover:scale-110 transition-all duration-300 w-80 rounded-lg overflow-hidden shrink-0 bg-slate-950"
       >
         <div className="h-1/2 w-full">
@@ -48,9 +47,8 @@ const WorkTray = () => {
             </p>
           </div>
         </div>
-      </a>
-      <a
-        href="/"
+      </div>
+      <div
         className="min-h-96 hover:scale-110 transition-all duration-300 w-80 rounded-lg overflow-hidden shrink-0 bg-slate-950"
       >
         <div className="h-1/2 w-full">
@@ -72,9 +70,8 @@ const WorkTray = () => {
             </p>
           </div>
         </div>
-      </a>
-      <a
-        href="/"
+      </div>
+      <div
         className="min-h-96 hover:scale-110 transition-all duration-300 w-80 rounded-lg overflow-hidden shrink-0 bg-slate-950"
       >
         <div className="h-1/2 w-full">
@@ -96,10 +93,9 @@ const WorkTray = () => {
             </p>
           </div>
         </div>
-      </a>
+      </div>
 
-      <a
-        href="/"
+      <div
         className="min-h-96 hover:scale-110 transition-all duration-300 w-80 rounded-lg overflow-hidden shrink-0 bg-slate-950"
       >
         <div className="h-1/2 w-full">
@@ -121,7 +117,7 @@ const WorkTray = () => {
             </p>
           </div>
         </div>
-      </a>
+      </div>
     </div>
   );
 };

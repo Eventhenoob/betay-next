@@ -12,7 +12,7 @@ const SoloCard3D = ({ description, image, title }: Props) => {
             <div className={style["card__data"]}>
                 <img src={image} alt="card image" className={style["card__img"] + " w -full sm:w-2/3"} />
 
-                <h1 className={style["card__title"] + " font-heading font-bold"}>{title}</h1>
+                <h3 className={style["card__title"] + " font-heading font-bold"}>{title}</h3>
                 <p className={style["card__description"]}>{description}</p>
             </div>
 

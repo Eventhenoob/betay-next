@@ -7,7 +7,7 @@ const SkillsTray = () => {
         <div className="absolute transition-all duration-500 group-[:hover]:w-full group-[:hover]:h-full -top-2 -left-2 rounded-2xl bg-yellow-400 w-12 h-12" />
         <div className="w-full group-[:hover]:text-black transition-all duration-500 relative z-10 ">
           <div className="w-full  font-heading mb-3 flex justify-between items-center">
-            <h3 className="text-2xl font-bold">Image de marque</h3>
+            <h2 className="text-2xl font-bold">Image de marque</h2>
             <LuAlignStartHorizontal className="text-3xl group-[:hover]:text-black transition-all duration-500 text-yellow-300" />
           </div>
           <p className="">
@@ -20,7 +20,7 @@ const SkillsTray = () => {
         <div className="absolute transition-all duration-500 group-[:hover]:w-full group-[:hover]:h-full -top-2 -left-2 rounded-2xl bg-yellow-400 w-12 h-12" />
         <div className="w-full group-[:hover]:text-black transition-all duration-500 relative z-10 ">
           <div className="w-full  font-heading mb-3 flex justify-between items-center">
-            <h3 className="text-2xl font-bold">Site Web</h3>
+            <h2 className="text-2xl font-bold">Site Web</h2>
             <LuAlignStartHorizontal className="text-3xl group-[:hover]:text-black transition-all duration-500 text-yellow-300" />
           </div>
           <p className="">
@@ -34,7 +34,7 @@ const SkillsTray = () => {
         <div className="absolute transition-all duration-500 group-[:hover]:w-full group-[:hover]:h-full -top-2 -left-2 rounded-2xl bg-yellow-400 w-12 h-12" />
         <div className="w-full group-[:hover]:text-black transition-all duration-500 relative z-10 ">
           <div className="w-full  font-heading mb-3 flex justify-between items-center">
-            <h3 className="text-2xl font-bold">Production Visuelle</h3>
+            <h2 className="text-2xl font-bold">Production Visuelle</h2>
             <LuAlignStartHorizontal className="text-3xl group-[:hover]:text-black transition-all duration-500 text-yellow-300" />
           </div>
           <p className="">
@@ -49,7 +49,7 @@ const SkillsTray = () => {
         <div className="absolute transition-all duration-500 group-[:hover]:w-full group-[:hover]:h-full -top-2 -left-2 rounded-2xl bg-yellow-400 w-12 h-12" />
         <div className="w-full group-[:hover]:text-black transition-all duration-500 relative z-10 ">
           <div className="w-full  font-heading mb-3 flex justify-between items-center">
-            <h3 className="text-2xl font-bold">Audit de Communication</h3>
+            <h2 className="text-2xl font-bold">Audit de Communication</h2>
             <LuAlignStartHorizontal className="text-3xl group-[:hover]:text-black transition-all duration-500 text-yellow-300" />
           </div>
           <p className="">
@@ -64,9 +64,9 @@ const SkillsTray = () => {
         <div className="absolute transition-all duration-500 group-[:hover]:w-full group-[:hover]:h-full -top-2 -left-2 rounded-2xl bg-yellow-400 w-12 h-12" />
         <div className="w-full group-[:hover]:text-black transition-all duration-500 relative z-10 ">
           <div className="w-full  font-heading mb-3 flex justify-between items-center">
-            <h3 className="text-2xl font-bold">
+            <h2 className="text-2xl font-bold">
               Plan Stratégique de Communication
-            </h3>
+            </h2>
             <LuAlignStartHorizontal className="text-3xl group-[:hover]:text-black transition-all duration-500 text-yellow-300" />
           </div>
           <p className="">
@@ -80,7 +80,7 @@ const SkillsTray = () => {
         <div className="absolute transition-all duration-500 group-[:hover]:w-full group-[:hover]:h-full -top-2 -left-2 rounded-2xl bg-yellow-400 w-12 h-12" />
         <div className="w-full group-[:hover]:text-black transition-all duration-500 relative z-10 ">
           <div className="w-full  font-heading mb-3 flex justify-between items-center">
-            <h3 className="text-2xl font-bold">Stratégie de Contenus</h3>
+            <h2 className="text-2xl font-bold">Stratégie de Contenus</h2>
             <LuAlignStartHorizontal className="text-3xl group-[:hover]:text-black transition-all duration-500 text-yellow-300" />
           </div>
           <p className="">
@@ -94,7 +94,7 @@ const SkillsTray = () => {
         <div className="absolute transition-all duration-500 group-[:hover]:w-full group-[:hover]:h-full -top-2 -left-2 rounded-2xl bg-yellow-400 w-12 h-12" />
         <div className="w-full group-[:hover]:text-black transition-all duration-500 relative z-10 ">
           <div className="w-full  font-heading mb-3 flex justify-between items-center">
-            <h3 className="text-2xl font-bold">Publicité en Ligne</h3>
+            <h2 className="text-2xl font-bold">Publicité en Ligne</h2>
             <LuAlignStartHorizontal className="text-3xl group-[:hover]:text-black transition-all duration-500 text-yellow-300" />
           </div>
           <p className="">

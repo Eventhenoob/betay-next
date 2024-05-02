@@ -37,7 +37,7 @@ const Clients = () => {
                     <p className="w-[80%] mb-10 text-xl md:text-3xl  m-auto">
                         L&apos;agence de communication {" "}
                         <Link className="text-blue-400" href="/">
-                            Agence Darwin
+                            Agency Darwin
                         </Link>{" "}
                         se distingue par son expertise dans la création de stratégies de
                         communication novatrices destinées aux entreprises.{" "}

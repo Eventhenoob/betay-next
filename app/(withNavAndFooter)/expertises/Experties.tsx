@@ -22,11 +22,11 @@ const Expertises = () => {
 
                 <section className="mt-10  mb-40 flex  flex-wrap justify-between items-center">
                     <div className="text-xl p-4 lg:pr-16 flex gap-4 flex-col lg:w-3/6">
-                        <h3
+                        <h2
                             className="text-4xl font-heading text-[#EF7238]"
                         >
                             Stratégie de communication
-                        </h3>
+                        </h2>
                         <p className="">
                             Une communication juste et efficace nécessite de choisir les bons
                             supports avec le bon message et au bon moment. Nous vous
@@ -66,12 +66,12 @@ const Expertises = () => {
                         />
                     </div>
                     <div className=" text-xl p-4 lg:pl-16 flex gap-4 flex-col lg:w-1/2">
-                        <h3
+                        <h2
 
                             className="text-4xl font-heading text-[#EF7238]"
                         >
                             Création graphique
-                        </h3>
+                        </h2>
                         <p className="">
                             Pour être identifiée efficacement par vos cibles, votre marque
                             doit présenter des supports cohérents entre eux. Les images, la
@@ -98,11 +98,11 @@ const Expertises = () => {
                     </div>
                 </section>
                 <section className="mt-4 mb-40 flex flex-col flex-wrap justify-center items-center">
-                    <h3 className="text-4xl font-heading mb-20 font-bold italic">Prestations de service</h3>
+                    <h2 className="text-4xl font-heading mb-20 font-bold italic">Prestations de service</h2>
                     <SkillsTray />
                 </section>
                 <section className="mt-4 mb-40 flex flex-col flex-wrap justify-center items-center">
-                    <h3 className="text-4xl font-heading mb-20 font-bold italic">Nos réalisations</h3>
+                    <h2 className="text-4xl font-heading mb-20 font-bold italic">Nos réalisations</h2>
                     <WorkTray />
                 </section>
             </main>

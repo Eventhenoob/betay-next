@@ -4,10 +4,8 @@ import Footer from "@/components/Footer";
 import Navigation from "@/components/Navigation";
 
 export const metadata: Metadata = {
-  title: {
-    default: "Agence Darwin | Agence de Communication Digitale",
-    template: "%s - Darwin"
-  },
+  title: "Agence Darwin | Agence de Communication Digitale",
+
   description: `Élevez votre présence numérique avec l'Agence Darwin. Experts en
 Communication Digitale, nous élaborons des stratégies innovantes pour
 votre réussite en ligne.`,

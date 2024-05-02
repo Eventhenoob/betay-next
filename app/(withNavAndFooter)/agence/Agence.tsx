@@ -35,7 +35,7 @@ const Agence = () => {
                         <span
                             className={
                                 " md:text-4xl text-start text-xl font-semibold  z-20  group-[:hover]:text-black transition-all duration-1000 " +
-                                (!cube && "text-black")
+                                (!cube && "text-black border-0")
                             }
                         >
                             DARWIN,

@@ -1,3 +1,4 @@
+import React, { useRef, useEffect } from "react";
 import RevelAnimation from "../../RevelAnimation/RevelAnimation";
 
 interface CardData {
@@ -16,6 +17,46 @@ const HorizontalScrollCard = ({
   onMouseEnter,
   onMouseLeave,
 }: CardData) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5, // Intersection threshold, when 50% of the component is visible
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            // When the component is in view
+            if (videoRef.current) {
+              videoRef.current.play(); // Play the video
+            }
+          } else {
+            // When the component is out of view
+            if (videoRef.current) {
+              videoRef.current.currentTime = 0;
+              videoRef.current.pause(); // Pause the video
+            }
+          }
+        });
+      },
+      options
+    );
+
+    if (videoRef.current) {
+      observer.observe(videoRef.current);
+    }
+
+    return () => {
+      if (videoRef.current) {
+        observer.unobserve(videoRef.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="w-screen text-white flex md:flex-row flex-col h-[90vh] py-10">
       <div className="md:w-1/2 w-full h-2/6 md:h-full relative flex justify-center items-center">
@@ -24,6 +65,7 @@ const HorizontalScrollCard = ({
           loop
           muted
           src={`/${video}`}
+          ref={videoRef}
           className="z-10  w-full h-full absolute top-0 left-0 md:object-cover object-cover"
         />
       </div>

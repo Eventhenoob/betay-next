@@ -97,9 +97,14 @@ export default function Home() {
                     />
                 </section>
                 <section className="w-full overflow-hidden relative min-h-screen flex flex-col justify-center items-center">
+                    <h2
+                        className="text-4xl text-white mb-20 font-heading font-bold text-center "
+                    >
+                        Nos Réalisations
+                    </h2>
                     <div className="w-full md:w-7/12 md:mb-0 mb-10 flex justify-center items-center">
                         <CustomImageShowcase />
-                    </div>  
+                    </div>
                 </section>
             </main>
         </>

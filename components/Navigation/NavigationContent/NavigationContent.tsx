@@ -25,14 +25,12 @@ const NavigationContent = ({
           (isActive && "opacity-100")
         }
       >
-        <li className="text-3xl hover:text-[#EF7238] transition-all duration-300 text-white">
-          <Link href="/home">Home</Link>
-        </li>
+
         <li className="text-3xl hover:text-[#EF7238] transition-all duration-300 text-white">
           <Link href="/agence">Agence</Link>
         </li>
         <li className="text-3xl hover:text-[#EF7238] transition-all duration-300 text-white">
-          <Link href="/expertises">Expertise</Link>
+          <Link href="/expertises">Expertises</Link>
         </li>
 
         <li className="text-3xl hover:text-[#EF7238] transition-all duration-300 text-white">

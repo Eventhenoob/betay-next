@@ -89,9 +89,6 @@ export default function Home() {
             </header>
 
             <main ref={mainRef} className="min-h-screen w-full py-10">
-                <section className=" py-14 w-full">
-                    <SwiperSlider3D />
-                </section>
 
                 <section className=" py-14 w-full">
                     <HorizontalScrollCarousel
@@ -102,10 +99,7 @@ export default function Home() {
                 <section className="w-full overflow-hidden relative min-h-screen flex flex-col justify-center items-center">
                     <div className="w-full md:w-7/12 md:mb-0 mb-10 flex justify-center items-center">
                         <CustomImageShowcase />
-                    </div>
-                    <div className="flex items-center mt-20 mb-10 justify-center">
-                        <PremiumButton href="/clients" text="Cas clients" />
-                    </div>
+                    </div>  
                 </section>
             </main>
         </>

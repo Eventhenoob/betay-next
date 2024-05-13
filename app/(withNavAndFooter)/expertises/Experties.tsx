@@ -1,5 +1,6 @@
 "use client"
 import ImageSliderMini from "@/components/ImageSliderMini/ImageSliderMini";
+import ProductsShowcase from "@/components/ProductsShowcase";
 
 import SkillsTray from "@/components/SkillsTray";
 import WorkTray from "@/components/WorkTray";

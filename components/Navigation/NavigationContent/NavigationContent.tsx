@@ -36,7 +36,7 @@ const NavigationContent = ({
         </li>
 
         <li className="text-3xl hover:text-[#EF7238] transition-all duration-300 text-white">
-          <Link href="/clients">Cas clients</Link>
+          <Link href="/clients">Nos Réalisations</Link>
         </li>
 
         <li className="text-3xl hover:text-[#EF7238] transition-all duration-300 text-white">

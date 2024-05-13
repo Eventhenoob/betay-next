@@ -3,7 +3,6 @@ import CustomButtonNext from "./CustomButtonNext";
 import CustomButtonPrev from "./CustomButtonPrev";
 import Slider from "react-slick";
 import { useRef } from "react";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Product from "./Product/Product";
@@ -48,6 +47,7 @@ const ProductsShowcase = () => {
     return (
         <div className="py-20 slider-container">
             <Slider
+                arrows={false}
                 {...settings}
                 ref={(slider) => {
                     sliderRef.current = slider;

@@ -1,5 +1,6 @@
 "use client"
 import PremiumButton from "@/components/Buttons/PermiumButton";
+import Gallery from "@/components/Gallery";
 import ProductsShowcase from "@/components/ProductsShowcase";
 // import { useState } from "react";
 // import CursorMask from "../components/CursorMark/CursorMask";
@@ -63,13 +64,14 @@ const Clients = () => {
                         Chez Darwin, notre objectif est de vous aider à atteindre vos objectifs
                         commerciaux grâce à des solutions digitales innovantes et efficaces.
                     </p>
-                    <ProductsShowcase />
+                    {/* <ProductsShowcase /> */}
                     <div className="p-10 my-20 flex justify-center items-center">
                         <PremiumButton
                             text="UN PROJET EN TÊTE? CONTACTEZ-NOUS"
                             href="/contact"
                         />
                     </div>
+                    <Gallery />
                 </div>
 
             </section>

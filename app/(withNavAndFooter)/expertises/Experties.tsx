@@ -11,7 +11,7 @@ const Expertises = () => {
         <>
             {/* <CursorMask isHovered={isHovered} /> */}
 
-            <main className="w-full text-center lg:text-left lg:px-40 pt-48 flex flex-col  min-h-screen overflow-x-hidden">
+            <main className="w-full text-center lg:text-left lg:px-10 pt-48 flex flex-col  min-h-screen overflow-x-hidden">
                 <h1
                     className="text-5xl lg:text-7xl  font-heading  "
                 >
